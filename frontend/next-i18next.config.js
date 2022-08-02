@@ -6,7 +6,7 @@ const path = require('path');
  * need to convert the locale to BCP 47
  */
 const localeToBCP47 = {
-  en: 'en-US',
+  en: 'ru-RU',
   no: 'nb-NO'
 };
 
@@ -32,6 +32,7 @@ module.exports = {
           return 'N/A';
         }
         return new Intl.NumberFormat(localeBCP47 || locale, {
+          minimumFractionDigits: 0,
           style: 'currency',
           currency
         }).format(value);

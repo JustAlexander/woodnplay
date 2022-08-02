@@ -29,6 +29,7 @@ const KlarnaCheckout = dynamic(() => import('./klarna'));
 const VippsCheckout = dynamic(() => import('./vipps'));
 const MollieCheckout = dynamic(() => import('./mollie'));
 const PaypalCheckout = dynamic(() => import('./paypal'));
+const InvoiceCheckout = dynamic(() => import('./invoice'));
 
 const Row = styled.div`
   display: flex;
@@ -66,6 +67,9 @@ export default function Payment() {
             enabled
           }
           paypal {
+            enabled
+          }
+          invoice {
             enabled
           }
         }
@@ -116,6 +120,27 @@ export default function Payment() {
       render: () => (
         <PaymentProvider>
           <StripeCheckout
+            checkoutModel={checkoutModel}
+            onSuccess={(crystallizeOrderId) => {
+              router.push(
+                checkoutModel.confirmationURL.replace(
+                  '{crystallizeOrderId}',
+                  crystallizeOrderId
+                )
+              );
+              scrollTo(0, 0);
+            }}
+          />
+        </PaymentProvider>
+      )
+    },
+    {
+      name: 'invoice',
+      color: '#6773E6',
+      logo: '/static/stripe-logo.png',
+      render: () => (
+        <PaymentProvider>
+          <InvoiceCheckout
             checkoutModel={checkoutModel}
             onSuccess={(crystallizeOrderId) => {
               router.push(
@@ -214,6 +239,9 @@ export default function Payment() {
     }
     if (paymentProviders.stripe.enabled) {
       enabledPaymentProviders.push('stripe');
+    }
+    if (paymentProviders.invoice.enabled) {
+      enabledPaymentProviders.push('invoice');
     }
     if (paymentProviders.paypal.enabled) {
       enabledPaymentProviders.push('paypal');
@@ -316,7 +344,7 @@ export default function Payment() {
                       );
                     })}
                   </PaymentSelector>
-
+                  
                   {paymentProviders
                     .find((p) => p.name === selectedPaymentProvider)
                     ?.render()}

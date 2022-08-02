@@ -1,21 +1,21 @@
 {
-  "title": "Basket",
-  "loading": "Hold on. Getting your basket...",
-  "removeItem": "Remove {{name}} from basket",
-  "empty": "Your basket is empty",
-  "remainingUntilFreeShipping": "Add another {{amount, currency}} to your order for free shipping.",
-  "totalPrice": "Total price",
-  "discount": "Discount",
-  "totalPriceAfterDiscount": "Total after discount",
-  "shippingPrice": "Shipping",
-  "tax": "Tax",
-  "totalToPay": "To pay",
-  "goToCheckout": "Go to checkout",
+  "title": "Корзина",
+  "loading": "Подождите. Загрузка корзины...",
+  "removeItem": "Удалить {{name}} из корзины",
+  "empty": "Ваша корзина пуста",
+  "remainingUntilFreeShipping": "Добавьте еще {{amount, валюта}} к вашему заказу для бесплатной доставки.",
+  "totalPrice": "Итоговая цена",
+  "discount": "Скидка",
+  "totalPriceAfterDiscount": "Итого со скидкой",
+  "shippingPrice": "Доставка",
+  "tax": "Налог",
+  "totalToPay": "К оплате",
+  "goToCheckout": "Перейти к оформлению заказа",
   "vouchers": {
-    "title": "Voucher",
-    "invalidCode": "The voucher {{code}} couldn\"t be applied",
-    "inputPlaceholder": "Got a voucher code?",
-    "applyCode": "Apply",
-    "remove": "Remove voucher"
+    "title": "Купон",
+    "invalidCode": "Купон {{code}} не может быть применен",
+    "inputPlaceholder": "Есть купон на скидку?",
+    "applyCode": "Применить",
+    "remove": "Удалить купон"
   }
 }
