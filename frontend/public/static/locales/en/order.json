@@ -1,5 +1,5 @@
 {
-  "total": "Total",
-  "item": "Order item",
-  "item_plural": "Order items"
+  "total": "Всего",
+  "item": "Заказанный товар",
+  "item_plural": "Заказанные товары"
 }

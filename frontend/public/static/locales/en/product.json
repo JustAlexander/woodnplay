@@ -1,8 +1,8 @@
 {
-  "relatedProduct": "You might also be interested in",
-  "relatedProduct_plural": "You might also be interested in",
-  "addToBasket": "Add to Basket",
-  "buy": "BUY",
-  "stock": "in stock: {{stockCount}}",
-  "outOfStock": "Out of stock"
+  "relatedProduct": "Вас также может заинтересовать",
+  "relatedProduct_plural": "Вас также могут заинтересовать",
+  "addToBasket": "Добавить в корзину",
+  "buy": "КУПИТЬ",
+  "stock": "в наличии: {{stockCount}}",
+  "outOfStock": "Товар закончился"
 }

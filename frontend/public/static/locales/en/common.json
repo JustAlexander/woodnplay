@@ -1,19 +1,19 @@
 {
-  "frontpage": "Home",
+  "frontpage": "Главная",
   "price": "{{value, currency}}",
-  "tax": "TAX: {{value, currency}}",
-  "close": "Close",
-  "menu": "Menu",
+  "tax": "НАЛОГ: {{value, currency}}",
+  "close": "Закрыть",
+  "menu": "Меню",
   "search": {
-    "placeholder": "Find things",
-    "label": "Search",
-    "foundResults": "Found {{count}} matching result",
-    "foundResults_plural": "Found {{count}} matching results"
+    "placeholder": "Поиск",
+    "label": "Поиск",
+    "foundResults": "Найден {{count}} товар",
+    "foundResults_plural": "Найдено {{count}} товара(ов)"
   },
   "ecomBy": "eCommerce by",
-  "loadingVideo": "Loading video",
+  "loadingVideo": "Загрузка видео",
   "slider": {
-    "previous": "See the previous item",
-    "next": "See the next item"
+    "previous": "Смотрите предыдущий пункт",
+    "next": "Смотрите следующий пункт"
   }
 }

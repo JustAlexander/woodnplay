@@ -1,20 +1,20 @@
 {
-  "name": "Name",
-  "firstName": "First name",
-  "lastName": "Last name",
-  "streetAddress": "Street address",
-  "postalCode": "Postal code",
+  "name": "Имя",
+  "firstName": "имя",
+  "lastName": "Фамилия",
+  "streetAddress": "Адрес",
+  "postalCode": "Индекс",
   "email": "Email",
-  "emailPlaceholder": "you@your.place",
+  "emailPlaceholder": "you@your.ru",
   "login": {
-    "title": "Login",
-    "loggedIn": "You are logged in",
-    "instructions": "Enter your email address and we’ll send a magic login link to your inbox.",
-    "emailAddressInvalid": "Please enter a valid email address",
-    "sendMagicLink": "Send me a magic link",
-    "error_CUSTOMER_NOT_FOUND": "Cannot find this customer"
+    "title": "Войти",
+    "loggedIn": "Вы авторизованы",
+    "instructions": "Введите свой адрес электронной почты, и мы отправим волшебную ссылку для входа на ваш почтовый ящик.",
+    "emailAddressInvalid": "Пожалуйста, введите действительный адрес электронной почты",
+    "sendMagicLink": "Пришлите мне волшебную ссылку",
+    "error_CUSTOMER_NOT_FOUND": "Не могу найти этого клиента"
   },
   "account": {
-    "title": "My account"
+    "title": "Мой аккаунт"
   }
 }

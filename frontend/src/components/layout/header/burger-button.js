@@ -10,8 +10,8 @@ const Outer = styled.button.attrs(() => ({
   /* display: none; */
   cursor: pointer;
   background: transparent;
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   position: fixed;
   /* margin-right: 15px; */
   margin-top: 0px;
@@ -28,10 +28,10 @@ const Outer = styled.button.attrs(() => ({
 `;
 
 const Lines = styled.div`
-  width: 100%;
+  width: 70%;
   position: absolute;
   background: ${(p) => (p.open ? 'transparent' : 'var(--color-text-main)')};
-  height: 3px;
+  height: 2px;
   top: 50%;
   margin-top: -2px;
   border-radius: 2px;
@@ -42,7 +42,7 @@ const Lines = styled.div`
     width: 100%;
     top: -14px;
     background: var(--color-text-main);
-    height: 3px;
+    height: 2px;
     content: '';
     position: absolute;
     left: 0;
@@ -52,7 +52,7 @@ const Lines = styled.div`
     transform: ${(p) => (p.open ? 'rotate(-45deg)' : 'rotate(0deg)')};
     left: ${(p) => (p.open ? '0px' : '0px')};
     width: ${(p) => (p.open ? '100%' : 'calc(100% - 8px)')};
-    top: ${(p) => (p.open ? '0' : '10px')};
+    top: ${(p) => (p.open ? '0' : '5px')};
 
     ${responsive.smAndLess} {
       left: ${(p) => (p.open ? '0px' : '8px')};
@@ -60,7 +60,7 @@ const Lines = styled.div`
   }
   &:before {
     transform: ${(p) => (p.open ? 'rotate(45deg)' : 'rotate(0deg)')};
-    top: ${(p) => (p.open ? '0' : '-10px')};
+    top: ${(p) => (p.open ? '0' : '-5px')};
   }
 `;
 

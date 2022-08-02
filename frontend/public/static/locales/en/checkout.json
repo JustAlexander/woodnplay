@@ -1,14 +1,14 @@
 {
-  "title": "Checkout",
-  "payNow": "Pay now",
-  "choosePaymentMethod": "Choose payment method",
-  "noPaymentProvidersConfigured": "No payment providers are configured",
-  "paymentProviderNotConfigured": "Payment provider {{name}} is not configured",
-  "paymentProviderLogoAlt": "Logo for {{name}}",
-  "loadingPaymentGateway": "Initialising payment gateway...",
-  "loadingPaymentGatewayFailed": "Oh no. Could not load the {{name}} payment gateway",
+  "title": "Оформление заказа",
+  "payNow": "Оформить заказ",
+  "choosePaymentMethod": "Выберите способ оплаты",
+  "noPaymentProvidersConfigured": "Поставщики платежей не настроены",
+  "paymentProviderNotConfigured": "Платежный провайдер {{name}} не настроен",
+  "paymentProviderLogoAlt": "Логотип для {{name}}",
+  "loadingPaymentGateway": "Инициализация платежного шлюза...",
+  "loadingPaymentGatewayFailed": "О, нет. Не удалось загрузить платежный шлюз {{name}}",
   "confirmation": {
-    "title": "Order confirmation",
-    "shortStatus": "Your order has been confirmed."
+    "title": "Подтверждение заказа",
+    "shortStatus": "Ваш заказ подтвержден."
   }
 }

@@ -34,8 +34,8 @@ export const Logo = styled.a`
   }
   ${responsive.xs} {
     height: 40px;
-    width: 110px;
-    margin-left: 25px;
+    width: 60px;
+    margin-left: 8px;
   }
 `;
 
@@ -108,8 +108,8 @@ export const Btn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border-radius: 5px;
   justify-self: flex-end;
@@ -124,8 +124,8 @@ export const Btn = styled.button`
     background: rgba(0, 0, 0, 0.05);
   }
   ${responsive.xs} {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     margin-left: 5px;
   }
 `;
@@ -141,8 +141,8 @@ export const BasketQuantity = styled.div`
   color: #fff;
   right: -6px;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
   background: #080708;
   border: 3px solid #fff;
 `;
