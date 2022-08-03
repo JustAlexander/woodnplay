@@ -9,7 +9,7 @@ export async function getStaticProps(context) {
     props: {
       ...(await serverSideTranslations(
         context.locale,
-        ['common', 'basket', 'checkout'],
+        ['common', 'basket', 'checkout', 'customer'],
         nextI18NextConfig
       ))
     }
