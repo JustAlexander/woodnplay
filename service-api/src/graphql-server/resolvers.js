@@ -8,7 +8,6 @@ const stripeService = require("../services/payment-providers/stripe");
 const mollieService = require("../services/payment-providers/mollie");
 const vippsService = require("../services/payment-providers/vipps");
 const klarnaService = require("../services/payment-providers/klarna");
-const paypalService = require("../services/payment-providers/paypal");
 const invoiceService = require("../services/payment-providers/invoice");
 
 function paymentProviderResolver(service) {
@@ -44,7 +43,6 @@ module.exports = {
     klarna: paymentProviderResolver(klarnaService),
     vipps: paymentProviderResolver(vippsService),
     mollie: paymentProviderResolver(mollieService),
-    paypal: paymentProviderResolver(paypalService),
     invoice: paymentProviderResolver(invoiceService),
   },
   OrderQueries: {
@@ -64,7 +62,6 @@ module.exports = {
     klarna: () => ({}),
     mollie: () => ({}),
     vipps: () => ({}),
-    paypal: () => ({}),
     invoice: () => ({}),
   },
   StripeMutations: {
@@ -92,20 +89,6 @@ module.exports = {
       vippsService.initiatePayment({
         ...args,
         context,
-      }),
-  },
-  PaypalMutation: {
-    createPayment: (parent, args, context) =>
-      paypalService.createPaypalPayment({
-        ...args,
-        context,
-        parent,
-      }),
-    confirmPayment: (parent, args, context) =>
-      paypalService.confirmPaypalPayment({
-        ...args,
-        context,
-        parent,
       }),
   },
   InvoiceMutation: {
