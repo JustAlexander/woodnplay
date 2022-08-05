@@ -28,7 +28,6 @@ const StripeCheckout = dynamic(() => import('./stripe'));
 const KlarnaCheckout = dynamic(() => import('./klarna'));
 const VippsCheckout = dynamic(() => import('./vipps'));
 const MollieCheckout = dynamic(() => import('./mollie'));
-const PaypalCheckout = dynamic(() => import('./paypal'));
 const InvoiceCheckout = dynamic(() => import('./invoice'));
 
 const Row = styled.div`
@@ -64,9 +63,6 @@ export default function Payment() {
             enabled
           }
           vipps {
-            enabled
-          }
-          paypal {
             enabled
           }
           invoice {
@@ -200,28 +196,6 @@ export default function Payment() {
           />
         </PaymentProvider>
       )
-    },
-    {
-      name: 'paypal',
-      color: '#fff',
-      logo: '/static/paypal-logo.png',
-      render: () => (
-        <PaymentProvider>
-          <PaypalCheckout
-            checkoutModel={checkoutModel}
-            basketActions={actions}
-            onSuccess={(crystallizeOrderId) => {
-              router.push(
-                checkoutModel.confirmationURL.replace(
-                  '{crystallizeOrderId}',
-                  crystallizeOrderId
-                )
-              );
-              scrollTo(0, 0);
-            }}
-          ></PaypalCheckout>
-        </PaymentProvider>
-      )
     }
   ];
 
@@ -242,9 +216,6 @@ export default function Payment() {
     }
     if (paymentProviders.invoice.enabled) {
       enabledPaymentProviders.push('invoice');
-    }
-    if (paymentProviders.paypal.enabled) {
-      enabledPaymentProviders.push('paypal');
     }
   }
 
