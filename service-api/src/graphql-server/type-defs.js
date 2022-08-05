@@ -97,7 +97,6 @@ module.exports = gql`
     klarna: PaymentProvider!
     vipps: PaymentProvider!
     mollie: PaymentProvider!
-    paypal: PaymentProvider!
     invoice: PaymentProvider!
   }
 
@@ -199,7 +198,6 @@ module.exports = gql`
     klarna: KlarnaMutations!
     mollie: MollieMutations!
     vipps: VippsMutations!
-    paypal: PaypalMutation!
     invoice: InvoiceMutation!
   }
 
@@ -254,19 +252,6 @@ module.exports = gql`
     success: Boolean!
     checkoutLink: String
     crystallizeOrderId: String!
-  }
-
-  type PaypalMutation {
-    createPayment(checkoutModel: CheckoutModelInput!): PaypalPaymentResponse!
-    confirmPayment(
-      checkoutModel: CheckoutModelInput!
-      orderId: String
-    ): PaypalPaymentResponse!
-  }
-
-  type PaypalPaymentResponse {
-    success: Boolean!
-    orderId: String
   }
 
   type InvoiceMutation {
