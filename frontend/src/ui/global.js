@@ -16,8 +16,8 @@ export default createGlobalStyle`
     --font-size-secondary: var(--font-size-s);
     --font-size-tags:var(--font-size-xs);
 
-    --font-listing-name-size: var(--font-size-s);
-    --font-listing-price-size: var(--font-size-s);
+    --font-listing-name-size: var(--font-size-m);
+    --font-listing-price-size: var(--font-size-m);
     --font-max-width: 800px;
 
     /* Colors */
