@@ -7,7 +7,7 @@ const Section = styled.div`
 
   h3 {
     margin: 0 0 0.5em 0;
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
   }
 `;
 
@@ -21,16 +21,17 @@ const Properties = styled.table`
   border-collapse: collapse;
 
   td {
+    font-size: var(--font-size-s);
     width: 50%;
-    padding: 1em 0;
+    padding: 1vh 0;
     border: 0px solid #dfdfdf;
     &.key {
       width: 30%;
-      font-weight: 600;
     }
 
     &.value {
       width: 70%;
+      font-weight: 600;
     }
   }
 

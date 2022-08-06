@@ -8,7 +8,7 @@ export const TotalResults = styled.span`
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: var(--font-size-secondary);
 `;
 
 export default function SearchCount({ count }) {

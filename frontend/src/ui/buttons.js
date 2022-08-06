@@ -33,7 +33,7 @@ const Outer = styled.button.attrs((p) => ({
   cursor: pointer;
   text-decoration: none;
   &:hover ${Inner} {
-    background: var(--color-text-main);
+    background: var(--color-primary-action-hover);
     color: var(--color-main-background);
   }
 

@@ -29,9 +29,9 @@ export const Body = styled.div`
 
 export const Text = styled.div`
   grid-area: content;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 `;
 export const Media = styled.div`
   grid-area: media;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 `;

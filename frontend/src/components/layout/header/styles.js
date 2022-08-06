@@ -143,7 +143,7 @@ export const BasketQuantity = styled.div`
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  background: #080708;
+  background: #6C584C;
   border: 3px solid #fff;
 `;
 

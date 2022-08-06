@@ -4,7 +4,6 @@ import { Image } from '@crystallize/react-image';
 export const Outer = styled.a`
   height: 100%;
   color: var(--color-main-background);
-  border: 4px solid #fff;
   display: block;
   transition: all 0.1s ease-in-out;
 `;
@@ -57,6 +56,7 @@ export const Footer = styled.div`
     font-family: var(--font-family-main);
     color: inherit;
     margin: 0;
+    font-weight: 100;
   }
 `;
 
@@ -64,7 +64,7 @@ export const Tags = styled.div`
   position: absolute;
   display: flex;
   z-index: 4;
-  bottom: 15px;
+  bottom: -15px;
   padding: 5px;
   width: 100%;
 `;

@@ -9,13 +9,12 @@ const Outer = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  border: 4px solid #fff;
   width: 50%;
   max-width: 100%;
   flex-grow: 1;
   position: relative;
   figure {
-    height: 100%;
+    height: auto;
   }
   img {
     object-fit: cover;
@@ -36,7 +35,7 @@ const ImgContainer = styled.div`
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   > picture {
     min-height: 300px;
