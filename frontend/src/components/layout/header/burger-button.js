@@ -30,7 +30,7 @@ const Outer = styled.button.attrs(() => ({
 const Lines = styled.div`
   width: 70%;
   position: absolute;
-  background: ${(p) => (p.open ? 'transparent' : 'var(--color-text-main)')};
+  background: ${(p) => (p.open ? 'transparent' : '#6C584C')};
   height: 2px;
   top: 50%;
   margin-top: -2px;
@@ -40,8 +40,9 @@ const Lines = styled.div`
   &:before,
   &:after {
     width: 100%;
+    border-radius: 2px;
     top: -14px;
-    background: var(--color-text-main);
+    background: #6C584C;
     height: 2px;
     content: '';
     position: absolute;

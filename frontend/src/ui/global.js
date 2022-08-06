@@ -5,12 +5,12 @@ export default createGlobalStyle`
     /* Typography */
     --font-family-main: "Trebuchet MS", sans-serif;
 
-    --font-size-xxl: 40px;
-    --font-size-xl: 32px;
-    --font-size-l: 26px;
-    --font-size-m: 20px;
-    --font-size-s: 16px;
-    --font-size-xs: 14px;
+    --font-size-xxl: 38px;
+    --font-size-xl: 30px;
+    --font-size-l: 24px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xs: 10px;
 
     --font-size-body: var(--font-size-m);
     --font-size-secondary: var(--font-size-s);
@@ -23,7 +23,7 @@ export default createGlobalStyle`
     /* Colors */
     --color-main-background: #fff;
     --color-text-main: #080708;
-    --color-text-sub: #4c505b;
+    --color-text-sub: #6C584C;
 
     --color-box-background: #efefef;
     --color-price: var(--color-text-main);
@@ -31,7 +31,8 @@ export default createGlobalStyle`
     --color-discount:#EE6969;
     --color-blockquote: var(--color-text-main);
   
-    --color-primary-action: #FBDCCE;
+    --color-primary-action: #DDE5B6;
+    --color-primary-action-hover: #ADC178;
     --color-primary-action-content:#080708;
     --color-icon-details: var(--color-primary-action);
     --color-ui-details: var(--color-primary-action);

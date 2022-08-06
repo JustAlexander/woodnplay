@@ -55,6 +55,14 @@ export const topicTagsColorMatrix = {
   Kitchen: {
     background: '#CBCBCD',
     color: '#737373'
+  },
+  Мальчики: {
+    background: '#bbdefb',
+    color: '#000000'
+  },
+  Девочки: {
+    background: '#f8bbd0',
+    color: '#000000'
   }
 };
 

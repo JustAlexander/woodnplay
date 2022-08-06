@@ -133,7 +133,7 @@ export default function Payment() {
     {
       name: 'invoice',
       color: '#6773E6',
-      logo: '/static/stripe-logo.png',
+      logo: '/static/oplata-logo.svg',
       render: () => (
         <PaymentProvider>
           <InvoiceCheckout

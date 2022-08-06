@@ -58,15 +58,6 @@ export const Specs = styled.div`
   display: block;
   margin-top: 15px;
   padding: 20px 0;
-  margin-left: 25px;
-  margin-right: 25px;
-
-  ${responsive.mdPlus} {
-    padding: 0 100px 0 25px;
-  }
-  ${responsive.md} {
-    padding: 0 0px 0 25px;
-  }
 `;
 
 export const Description = styled.div`
@@ -80,11 +71,7 @@ export const Description = styled.div`
 export const DescriptionWrapper = styled.div`
   p,
   li {
-    margin-left: 25px !important;
-    margin-right: 25px;
     ${responsive.mdPlus} {
-      padding-right: 100px;
-      margin-left: 50px !important;
       margin-right: 0;
     }
   }
@@ -94,10 +81,9 @@ export const DescriptionWrapper = styled.div`
   }
 
   h3 {
-    margin-left: 25px;
     line-height: 38px;
     ${responsive.mdPlus} {
-      margin-left: 50px;
+
     }
   }
 `;
@@ -110,7 +96,6 @@ export const Media = styled.div`
 
 // Creating a gallery based on image orientation
 export const ImgContainer = styled.div`
-  border: 4px solid #fff;
   width: 50%;
   max-width: 100%;
   flex-grow: 1;

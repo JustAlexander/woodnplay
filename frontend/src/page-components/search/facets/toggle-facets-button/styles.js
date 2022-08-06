@@ -13,7 +13,7 @@ export const Button = styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-main);
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
   padding: 0.75rem 1rem;

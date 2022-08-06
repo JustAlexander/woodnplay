@@ -19,7 +19,7 @@ export const Inner = styled.div`
   margin: 0 auto;
   display: block;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 0 1vw;
 
   ${responsive.smPlus} {
     padding-left: 2rem;

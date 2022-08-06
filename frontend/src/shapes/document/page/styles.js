@@ -107,7 +107,6 @@ export const Article = styled.article`
   }
 
   h3 {
-    margin-left: 25px;
     font-size: var(--font-size-l);
     line-height: 38px;
     ${responsive.mdPlus} {
