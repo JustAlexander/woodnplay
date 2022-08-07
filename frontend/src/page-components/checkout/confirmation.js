@@ -37,7 +37,7 @@ const TotalLine = styled.div`
 
 export default function Confirmation({ order }) {
   const basket = useBasket();
-  const { t } = useTranslation(['common', 'checkout', 'order']);
+  const { t } = useTranslation(['common', 'checkout', 'order', 'customer']);
   const router = useRouter();
 
   // Empty the basket

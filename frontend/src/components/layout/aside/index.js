@@ -14,15 +14,17 @@ import { Outer, Heading, Content, Footer } from './styles';
 const CheckoutBtn = styled(Button)`
   width: 100%;
   margin: 20px 0;
-  border: 2px solid var(--color-text-main);
   padding: 10px 20px;
   display: block;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  border-radius: 4px;
+  color: var(--color-primary-action-content);
+  background: var(--color-primary-action);
 
   &:not([disabled]):hover {
-    background: var(--color-text-main);
+    background: var(--color-primary-action-hover);
     color: var(--color-main-background);
     text-decoration: none;
   }

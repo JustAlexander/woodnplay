@@ -4,6 +4,7 @@ import { Image } from '@crystallize/react-image';
 export const Outer = styled.a`
   height: 100%;
   color: var(--color-main-background);
+  border: 4px solid #fff;
   display: block;
   transition: all 0.1s ease-in-out;
 `;

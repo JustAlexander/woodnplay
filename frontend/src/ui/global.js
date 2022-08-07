@@ -23,7 +23,7 @@ export default createGlobalStyle`
     /* Colors */
     --color-main-background: #fff;
     --color-text-main: #080708;
-    --color-text-sub: #6C584C;
+    --color-text-sub: #080708;
 
     --color-box-background: #efefef;
     --color-price: var(--color-text-main);
@@ -48,7 +48,7 @@ export default createGlobalStyle`
     --listformat-product-height-lg:580px;
     --listformat-product-height-md:500px;
     --listformat-product-height-sm:600px;
-    --listformat-product-height-xs:400px;
+    --listformat-product-height-xs:190px;
     --listformat-product-image-fit: cover;
     --listformat-product-image-position: center;
     --listformat-product-background: #efefef;

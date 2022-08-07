@@ -1,9 +1,10 @@
 {
   "name": "Имя",
-  "firstName": "имя",
+  "firstName": "Имя",
   "lastName": "Фамилия",
   "streetAddress": "Адрес",
   "postalCode": "Индекс",
+  "phone": "Телефон",
   "email": "Email",
   "emailPlaceholder": "you@your.ru",
   "login": {

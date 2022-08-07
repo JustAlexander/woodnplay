@@ -13,6 +13,7 @@ const ImgContainer = styled.div`
   max-width: 100%;
   flex-grow: 1;
   position: relative;
+  padding: 5px;
   figure {
     height: auto;
   }
@@ -36,7 +37,8 @@ const List = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-
+  margin-left: -5px;
+  margin-right: -5px;
   > picture {
     min-height: 300px;
     ${responsive.xs} {

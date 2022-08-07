@@ -14,6 +14,8 @@ const H1 = styled.h1`
   color: var(--color-text-main);
   max-width: var(--font-max-width);
   margin-bottom: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
 `;
 
 export default function PageHeader({ title, description }) {
