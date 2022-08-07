@@ -26,16 +26,20 @@ const Inner = styled.div`
 const BillingDetails = ({ order }) => {
   const { t } = useTranslation('customer');
   const { email } = order.customer.addresses?.[0] || {};
+  const { phone } = order.customer.addresses?.[0] || {};
 
   return (
     <Outer>
       <Inner>
-        <H3>Billing Details</H3>
+        <H3>Детали заказа</H3>
         <p>
           {t('name')}:{' '}
           <strong>
             {order.customer.firstName} {order.customer.lastName}
           </strong>
+        </p>
+        <p>
+          {t('phone')}: <strong>{phone}</strong>
         </p>
         <p>
           {t('email')}: <strong>{email}</strong>

@@ -16,7 +16,7 @@ export const Button = styled.button`
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.35rem;
   position: relative;
   text-align: center;
   text-decoration: none;

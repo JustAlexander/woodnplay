@@ -64,8 +64,7 @@ export const Description = styled.div`
   color: var(--color-text-sub);
 
   ${responsive.mdPlus} {
-    padding: 100px 0;
-    margin-top: 50px;
+    padding: 25px 0;
   }
 `;
 export const DescriptionWrapper = styled.div`

@@ -9,6 +9,8 @@ export const TotalResults = styled.span`
   display: block;
   margin-bottom: 10px;
   font-size: var(--font-size-secondary);
+  padding-left: 4px;
+  padding-right: 4px;
 `;
 
 export default function SearchCount({ count }) {

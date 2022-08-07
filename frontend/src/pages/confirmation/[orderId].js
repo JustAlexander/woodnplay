@@ -21,7 +21,7 @@ export async function getServerSideProps({ locale, query: { orderId } }) {
       order: response.data.orders.get,
       ...(await serverSideTranslations(
         locale,
-        ['common', 'basket', 'checkout'],
+        ['common', 'basket', 'checkout', 'customer', 'order'],
         nextI18NextConfig
       ))
     }

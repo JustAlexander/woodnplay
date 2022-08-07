@@ -45,6 +45,7 @@ export default function Payment() {
   const [state, setState] = useState({
     firstName: '',
     lastName: '',
+    phone: '',
     email: ''
   });
 
@@ -80,7 +81,7 @@ export default function Payment() {
     multilingualUrlPrefix = '/' + router.locale;
   }
 
-  const { firstName, lastName, email } = state;
+  const { firstName, lastName, phone, email } = state;
 
   function getURL(path) {
     return `${location.protocol}//${location.host}${multilingualUrlPrefix}${path}`;
@@ -99,6 +100,7 @@ export default function Payment() {
       addresses: [
         {
           type: 'billing',
+          phone: phone || null,
           email: email || null
         }
       ]
@@ -246,6 +248,18 @@ export default function Payment() {
                 onChange={(e) =>
                   setState({ ...state, lastName: e.target.value })
                 }
+                required
+              />
+            </InputGroup>
+          </Row>
+          <Row>
+            <InputGroup>
+              <Label htmlFor="phone">{t('customer:phone')}</Label>
+              <Input
+                name="phone"
+                type="tel"
+                value={phone}
+                onChange={(e) => setState({ ...state, phone: e.target.value })}
                 required
               />
             </InputGroup>
