@@ -4,7 +4,8 @@ import { responsive } from 'ui';
 export const Outer = styled.div`
   ul {
     display: grid;
-    grid-auto-rows: var(--listformat-product-height-xs);
+    // grid-auto-rows: var(--listformat-product-height-lg);
+    grid-auto-rows:  auto;
     grid-gap: 15px;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;

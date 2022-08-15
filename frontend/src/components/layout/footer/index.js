@@ -2,15 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 
 import LogoCrystallize from 'ui/icons/logo-crystallize';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 
-import { useSettings } from 'components/settings-context';
+// import { useSettings } from 'components/settings-context';
 
 import { Outer, Logo, NavList, Powered } from './styles';
 
 export default function Footer() {
-  const { t } = useTranslation('common');
-  const { mainNavigation } = useSettings();
+//   const { t } = useTranslation('common');
+//   const { mainNavigation } = useSettings();
 
   return (
     <Outer>
@@ -21,7 +21,7 @@ export default function Footer() {
           </Logo>
         </a>
       </Link>
-      <NavList>
+      {/* <NavList>
         <h5>{t('menu')}</h5>
         {mainNavigation?.map((category) => (
           <li key={category.path}>
@@ -30,9 +30,9 @@ export default function Footer() {
             </Link>
           </li>
         ))}
-      </NavList>
+      </NavList> */}
       <Powered>
-        <p>{t('ecomBy')}</p>
+        {/* <p>{t('ecomBy')}</p> */}
         <a href="https://crystallize.com" aria-label="crystallize.com">
           <LogoCrystallize size={10} />
         </a>
